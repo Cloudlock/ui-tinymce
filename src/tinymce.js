@@ -68,6 +68,10 @@ angular.module('ui.tinymce', [])
               ed.save();
               updateView();
             });
+            ed.on('NodeChange', function (e) {
+              ed.save();
+              updateView();
+            });
             if (configSetup) {
               configSetup(ed);
             }
