@@ -6,7 +6,7 @@ angular.module('cl.tinymce', [])
   .directive('clTinymce', ['$rootScope', '$compile', '$timeout', '$window', '$sce', 'clTinymceConfig', function($rootScope, $compile, $timeout, $window, $sce, clTinymceConfig) {
     clTinymceConfig = clTinymceConfig || {};
     var generatedIds = 0;
-    var ID_ATTR = 'ui-tinymce';
+    var ID_ATTR = 'cl-tinymce';
     if (clTinymceConfig.baseUrl) {
       tinymce.baseURL = clTinymceConfig.baseUrl;
     }
